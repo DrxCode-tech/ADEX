@@ -1,0 +1,116 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.togBut{
+  position: fixed;
+  top: 7px;
+  right: 5px;
+  background-color: #0f4902;
+  font-size: 30px;
+}
+
+.title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  width: 100vw;
+  background-color: green;
+  height: 150px;
+  color: yellow;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+
+.heading {
+  display: flex; /* Changed from grid to flex for better vertical alignment */
+  align-items: center;
+  height: 60px; /* Increased for better appearance */
+  padding: 0 0px;
+}
+
+.img-cont {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.aces-img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  border-radius: 5px; /* Optional: makes the image look neater */
+}
+
+h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.input-fl{
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-size: 25px;
+}
+
+form{
+  display: inline;
+}
+#date-input,.input-field{
+  background-color: #60dc44;
+}
+
+
+.containe{
+  display: flex;
+  justify-content: space-between; /* Pushes buttons to the ends */
+  padding: 10px;
+  margin-top: 160px;
+}
+.present,.absent{
+  background-color: #237212;
+  color: yellow;
+  width: 115px;
+  height: 30px;
+}
+.present:hover,.absent:hover{
+  background-color: #1f4f14;
+}
+
+.adexDispy{
+  width: 90%;
+  height: auto;
+  box-shadow: 3px 4px 5px 2px gray;
+  margin: auto auto;
+  padding: 5px;
+  overflow: scroll;
+}
+
+.bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2px;
+    height: 60px;
+    width: 100%;
+    background-color: #1f5c1c;
+    padding-top: 20px;
+  }
+  .button{
+    display: block;
+    height: 40px;
+    color: white;
+    font-size: 19px;
+    border-radius: 10px;
+    background: blue;
+  }

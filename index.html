@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ADEX</title>
+    <link rel="stylesheet" href="ADEX.css">
+  </head>
+  <body>
+    <div class="title">
+      <div class="togBut">🔼</div>
+      <div class="heading">
+        <div class="img-cont">
+          <img class="aces-img" src="aces.jpg">
+        </div>
+        <h2>ATTENDANCE ACES</h2>
+      </div>
+      <br><br>
+      <div class="input-fl">
+        <form>
+          <select class="input-field">
+            <option>CPE111</option>
+            <option>CPE113</option>
+            <option>MAT111</option>
+            <option>PHY111</option>
+            <option>PHY112</option>
+            <option>GST111</option>
+            <option>PHY117</option>
+            <option>GET111</option>
+          </select>
+        </form> : 
+        <input type="date" id="date-input" >
+      </div>
+    </div>
+   
+    <div class="containe">
+      <button class="present">Student present</button>
+      <button class="absent">Student absent</button>
+    </div>
+    
+    <div class="adexDispy">
+      
+    </div>
+    
+    <div class="bottom">
+      <button class="button get-attendance-btn">Attendance</button>
+      <button class="button" onclick="printAttendance()" style="background: green;">Print</button>
+      <button class="button" onclick="downloadAttendance()" style="background: orange;">Download</button>
+    </div>
+    <script type="module" src="firebaseConfig.js"></script>
+    <script type="module" src="ADEX.js"></script>
+  </body>
+</html>
