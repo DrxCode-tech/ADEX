@@ -1,5 +1,5 @@
 // ADEX.js
-import { db } from "./firebaseConfig.js";
+import { db } from "./fireConfig.js";
 import {
   collection,
   getDocs
