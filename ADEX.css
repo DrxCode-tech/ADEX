@@ -91,7 +91,7 @@ form{
   box-shadow: 3px 4px 5px 2px gray;
   margin: auto auto;
   padding: 5px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .bottom{
